@@ -1,0 +1,17 @@
+gcc assn_3.c -o assn_3
+#Supplement
+#./assn_3 --basic input.supplement.bin output1.bin
+#diff output1.bin sort.supplement.bin
+#echo "Supplement done"
+#./assn_3 --basic input.basic.1000.bin output2.bin
+#diff output2.bin sort.basic.1000.bin
+#./assn_3 --basic input.basic.30000.bin output3.bin
+#diff output3.bin sort.basic.30000.bin
+#./assn_3 --basic input.basic.99000.bin output4.bin
+#diff output4.bin sort.basic.99000.bin
+#echo "Basic done"
+./assn_3 --multistep input.supplement.bin output1.bin
+rm -f input.supplement.bin.* input.basic.1000.bin.* input.basic.30000.bin.* input.basic.99000.bin.*
+rm -f output1.bin output2.bin output3.bin output4.bin
+rm -f input.supplement.bin.super.* input.basic.1000.bin.super.* input.basic.30000.bin.super.* input.basic.99000.bin.super.*
+
